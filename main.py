@@ -51,15 +51,5 @@ async def profile(ctx, member : discord.Member):
   embed.set_footer(icon_url = ctx.author.avatar_url, text = f"For {ctx.author.name}")
   await ctx.send(embed = embed)
 
-
-"""
-#roster list
-@client.command()
-async def rosterlist(ctx):
-    await ctx.reply(
-        "https://docs.google.com/spreadsheets/d/1GSqUpRrH8HhxwDmbROtB3b0A16QiKvVE9ORZ9BVvacQ/edit?usp=drivesdk"
-    )
-"""
-
 keep_alive()
 client.run(os.environ['TOKEN'])
